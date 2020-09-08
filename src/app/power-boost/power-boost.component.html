@@ -1,0 +1,4 @@
+<div *ngIf="hero.power > 5">power-boost works!
+  <button (click)="notify.emit(); powerUp(hero)">Activate power boost!</button>
+  <button (click)="notify2.emit()">Deactivate power boost!</button>
+</div>
