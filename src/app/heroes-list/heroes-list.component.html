@@ -1,1 +1,19 @@
-<p>heroes-list works!</p>
+<ul>
+  <li *ngFor="let hero of heroes" [title]='hero.name + " details"' routerLink="/heroes/hero/{{hero.heroId}}">
+      <h2>{{ hero.name }}</h2>
+      <div>Can you fly? {{hero.canFly}}</div>
+      <div>Power: {{hero.power}}</div>
+      <app-power-boost
+      [hero]="hero"
+      (notify)="onNotify()"
+      (notify2)="onDeactivate()"></app-power-boost>
+  </li>
+</ul>
+
+<label for="canFly">
+  Can you fly?
+  <input type="checkbox" id="canFly" [(ngModel)]="canFly" />
+</label>
+<input #box (keyup.enter)="addHero(box.value); box.value = '';">
+
+<p *ngIf="heroes.length > 3">Woahh lots of heroes!</p>
