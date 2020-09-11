@@ -5,6 +5,7 @@ import { HeroListService } from './hero-list.service'
 @Component({
   selector: 'app-root',
   templateUrl: 'app.components.html',
+  styleUrls: ['./app.component.css'],
   providers: [ HeroListService ]
 })
 export class AppComponent {

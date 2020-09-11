@@ -5,13 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { PowerBoostComponent } from './power-boost/power-boost.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component'
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { HeroesListComponent } from './heroes-list/heroes-list.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     PowerBoostComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    HeroesListComponent
   ],
   imports: [
     BrowserModule,

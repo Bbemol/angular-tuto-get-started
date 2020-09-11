@@ -1,6 +1,6 @@
-<h1>{{title}}</h1>
+<h1 class="h1-title">{{title}}</h1>
 <ul>
-  <li *ngFor="let hero of heroes" [title]='hero.name + " details"' [routerLink]="['/heroes', hero.heroId]">
+  <li *ngFor="let hero of heroes" [title]='hero.name + " details"' routerLink="/heroes/{{hero.heroId}}">
       <h2>{{ hero.name }}</h2>
       <div>Can you fly? {{hero.canFly}}</div>
       <div>Power: {{hero.power}}</div>
@@ -10,6 +10,7 @@
       (notify2)="onDeactivate()"></app-power-boost>
   </li>
 </ul>
+<router-outlet></router-outlet>
 <p *ngIf="heroes.length > 3">Woahh lots of heroes!</p>
 <label for="canFly">
   Can you fly?

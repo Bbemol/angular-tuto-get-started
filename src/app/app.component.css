@@ -1,3 +1,8 @@
+h1.h1-title {
+  cursor: pointer;
+  background: blue;
+}
+
 li {
   cursor: pointer;
 }
