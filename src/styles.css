@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* https://coolors.co/562c2c-f2542d-f5dfbb-0e9594-127475 */
+
+body {
+  position: relative;
+  padding: 10px;
+  padding-bottom: 70px;
+  min-height: 500px;
+}
+
+a {
+  color: #127475;
+}
+a:hover {
+  color: #0E9594;
+}
+
+a:visited, a:focus {
+  color: #127475;
+}

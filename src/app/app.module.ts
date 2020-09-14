@@ -10,6 +10,7 @@ import { HeroesListComponent } from './heroes-list/heroes-list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroTestComponent } from './hero-detail/hero-test/hero-test.component';
 import { HeroChildComponent } from './hero-detail/hero-child/hero-child.component';
+import { MessagesComponent } from './messages/messages.component';
 // import { HeroChildComponent } from './test/hero-child/hero-child.component';
 // import { HeroChild2Component } from './test/hero-child2/hero-second.component';
 
@@ -23,6 +24,7 @@ import { HeroChildComponent } from './hero-detail/hero-child/hero-child.componen
     DashboardComponent,
     HeroTestComponent,
     HeroChildComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,

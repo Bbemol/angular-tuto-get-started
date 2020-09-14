@@ -1,0 +1,20 @@
+.heroList {
+  padding: 0;
+}
+.hero--item {
+  cursor: pointer;
+  background: #F5DFBB;
+  padding: 10px 10px 30px;
+  list-style: none;
+}
+.hero--item:hover {
+  background: #127475;
+  color: white;
+}
+
+.hero--name {
+  color: black;
+}
+.hero--item:hover .hero--name {
+  color: white;
+}

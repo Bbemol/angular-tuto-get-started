@@ -1,6 +1,6 @@
-<ul>
-  <li *ngFor="let hero of heroes" [title]='hero.name + " details"' routerLink="/heroes/hero/{{hero.heroId}}">
-      <h2>{{ hero.name }}</h2>
+<ul class="heroList">
+  <li *ngFor="let hero of heroes" [title]='hero.name + " details"' class="hero--item" (click)="selectHero(hero.name)" routerLink="/heroes/hero/{{hero.heroId}}">
+      <h2 class="hero--name">{{ hero.name }}</h2>
       <div>Can you fly? {{hero.canFly}}</div>
       <div>Power: {{hero.power}}</div>
       <app-power-boost
